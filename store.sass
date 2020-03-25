@@ -1,0 +1,57 @@
+.storeSection
+    width: 100%
+    margin-top: 5%
+    padding-top: 5%
+    background-color: #ffedf9
+    display: flex
+    justify-content: center
+    .storeContainer
+        width: 90%
+       
+        display: flex   
+        position: relative
+        .stroeSide
+            flex: 1
+           
+            .sideNav
+                padding: 10px
+                list-style: none
+                li
+                    padding: 20px
+                    color: #f46758
+                    border-bottom: 2px solid #ccc
+                    cursor: pointer
+                li:hover
+                    background-color: #f2d5ea
+        .stroeList
+            flex: 5
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+            .storeItem
+                width: 300px
+                height: 320px
+                position: relative
+                padding-bottom: 30px
+                margin-bottom: 20px
+                border-radius: 10px
+                background: linear-gradient(to left,rgba(255,150,246,.8),rgba(91,149,213,.8));
+                cursor: pointer
+                img
+                    height: 90%
+                    width: 100%
+            
+                .storeItemSize
+                    position: absolute 
+                    top: 10px
+                    right: 10px
+                    color: #444444
+                .storeItemInfo
+                    .storeItemName
+                        margin: 0
+                        text-align: center
+                    .storeItemPrice
+                        margin: 0
+                        margin-top: 5px
+                        text-align: center
+                        background-color: #fff

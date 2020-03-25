@@ -1,0 +1,243 @@
+.mainSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainSection .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/20/6f/b5/206fb560-6fd5-15f9-0b68-88d309ffc5a6/19UMGIM53909.rgb.jpg/600x600bf.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  opacity: 0.6;
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+  z-index: -99;
+}
+
+.mainSection .mainContainer {
+  margin: 50px;
+  width: 60%;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fff;
+}
+
+.mainSection .mainContainer .mainInfoContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainSection .mainContainer .mainInfoContainer .albumCover {
+  width: 200px;
+  height: 200px;
+  background-image: url(https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/20/6f/b5/206fb560-6fd5-15f9-0b68-88d309ffc5a6/19UMGIM53909.rgb.jpg/600x600bf.png);
+  background-size: cover;
+}
+
+.mainSection .mainContainer .mainInfoContainer .albumInfo {
+  margin-left: 30px;
+}
+
+.mainSection .mainContainer .mainInfoContainer .albumInfo .playBtn {
+  background: -webkit-gradient(linear, left bottom, left top, from(#48C346), to(#2ba529));
+  background: linear-gradient(to top, #48C346, #2ba529);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mainSection .listSection {
+  margin: 50px;
+  width: 65%;
+  margin-top: -30px;
+}
+
+.mainSection .listSection .mainListContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainSection .listSection ul {
+  list-style: none;
+  padding-left: 0px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -10px;
+}
+
+.mainSection .listSection li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 0;
+  width: 100%;
+  color: #444444;
+}
+
+.mainSection .listSection li .num {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.mainSection .listSection li .name {
+  font-size: 14px;
+  margin: 0;
+}
+
+.mainSection .listSection li .fa-play {
+  color: #919191;
+  cursor: pointer;
+}
+
+.ablumSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.ablumSection .ablumContainer {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ablumSection .ablumContainer .albumItem {
+  width: 280px;
+  height: 280px;
+  background-size: cover;
+  background-position: 50%;
+  margin: 20px 0;
+}
+
+.ablumSection .ablumContainer .albumItem .filter {
+  width: 280px;
+  height: 280px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.ablumSection .ablumContainer .albumItem .filter .frame {
+  border: 1px solid #fff;
+  padding: 5px 10px;
+}
+
+.ablumSection .ablumContainer .albumItem .filter .albumTitle {
+  text-align: center;
+}
+
+.ablumSection .ablumContainer .albumItem:hover .filter {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ablumSection .ablumContainer .item1 {
+  background-image: url(https://i.kfs.io/album/global/69034845,2v1/fit/500x500.jpg);
+}
+
+.ablumSection .ablumContainer .item2 {
+  background-image: url(https://i.kfs.io/album/global/66956865,0v1/fit/500x500.jpg);
+}
+
+.ablumSection .ablumContainer .item3 {
+  background-image: url(https://y.gtimg.cn/music/photo_new/T023R750x750M0000015U2Y01op7Tj.jpg?max_age=2592000);
+}
+
+.ablumSection .ablumContainer .item4 {
+  background-image: url(https://images.genius.com/7bda28ccf6bccf93ef5504cd1887f21e.1000x1000x1.jpg);
+}
+
+.ablumSection .ablumContainer .item5 {
+  background-image: url(https://i.kfs.io/album/global/65746601,0v1/fit/500x500.jpg);
+}
+
+.ablumSection .ablumContainer .item6 {
+  background-image: url(https://linkstorage.linkfire.com/medialinks/images/612dea5f-3a2c-4745-aea1-8163bc19699f/artwork-440x440.jpg);
+}
+
+.ablumSection .ablumContainer .item7 {
+  background-image: url(https://headlineplanet.com/home/wp-content/uploads/2019/06/Taylor-Swift-Calm-Down-Art.jpg);
+}
+
+.ablumSection .ablumContainer .item8 {
+  background-image: url(https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/15/b3/8c/15b38c44-482a-5c26-8011-35e926ce17b3/source/1200x1200bb.jpg);
+}
+
+.ablumSection .ablumContainer .item9 {
+  background-image: url(https://i.kfs.io/album/global/32846216,0v1/fit/500x500.jpg);
+}
+
+.ablumSection .ablumContainer .item10 {
+  background-image: url(https://img.mymusic.net.tw/mms/album/L/464/539464.jpg);
+}
+
+.ablumSection .ablumContainer .item11 {
+  background-image: url(https://img.shop.com/Image/250000/257700/257781/products/1648663032__400x400__.jpg);
+}
+
+.ablumSection .ablumContainer .item12 {
+  background-image: url(https://i.kfs.io/album/global/43450447,0v1/fit/500x500.jpg);
+}
+/*# sourceMappingURL=music.css.map */

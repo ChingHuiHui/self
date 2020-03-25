@@ -1,0 +1,197 @@
+.login-main
+    display: none
+    z-index: 9999
+.show
+    height: 100%
+    width: 100%
+    position: fixed
+    top: 0
+    left: 0
+    display: flex
+    justify-content: center
+    align-items: center
+.login-cover
+    height: 100%
+    width: 100%
+    position: fixed
+    top: 0
+    left: 0
+    background-color: #000
+    opacity: 0.8
+.login-container
+    min-width: 600px
+    background-color: #fff
+    border: 20px solid #000
+    display: flex
+    align-items: center
+    flex-direction: column
+    position: relative
+    .login-close
+        position: absolute
+        top: 0
+        right: 0
+        color: #fff
+        cursor: pointer
+    .login-bar
+        width: 100%
+        background-color: #fff
+        font-size: 30px
+        display: flex
+        justify-content: space-between
+        .login-toDo
+            width: 50%
+            padding: 10px
+            cursor: pointer
+        .login-do2
+            background-color: #000000
+            color: #686868
+    .login-content
+        width: 95%
+        padding: 30px
+        position: relative
+    .login-content:after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 15px
+        background-color: #eee
+        width: 95%
+        height: 2px
+    .login-wayToLogin
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        
+        .login-box
+            width: 33%
+            display: flex
+            background-color: #3B5DA0
+            border-radius: 2px
+            cursor: pointer
+            .login-logo
+                background-color: #475A82
+                width: 30px
+                height: 30px
+                padding: 5px
+                color: #fff
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 2px 0 0 2px
+            .login-logotext
+                display: flex
+                align-items: center
+                padding-left: 10px
+                color: #fff
+                font-weight: 500
+                font-size: 10px
+                span
+                    font-weight: bold
+                    font-size: 12px
+        
+        .login-b2
+            background-color: #19B4EE
+            .login-l2
+                background-color: #228EB8
+        .login-b3
+            background-color: #E05D4D
+            .login-l3
+                background-color: #ae5146
+
+    .login-orBar
+        width: 100%
+        height: 2px
+        background-color: #ABABAB
+        margin-top: 20px
+        display: flex
+        justify-content: center
+        align-items: center
+        .login-orCir
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            background-color: #fff
+            border: 2px solid #ABABAB
+            display: flex
+            align-items: center
+            justify-content: center
+            font-size: 12px
+            font-weight: bold
+            font-style: italic
+            color: #ABABAB
+    .login-content 
+            .login-inputContainer
+                width: 100%
+                
+                display: flex
+                justify-content: space-around
+                .login-inputItem
+                    width: 40%
+                    .login-label
+                        margin-bottom: 10px
+                        font-size: 12px
+                        .login-formRequired
+                            color: red
+                    .login-password
+                        width: 100%
+                        height: 10px
+                        border: 1px solid #eee
+                        box-shadow: inset 1px 1px 1px rgba(20%,20%,40%,0.2)
+    .login-content
+            .login-checkContainer
+                width: 100%
+                border-bottom: 1px dotted #ABABAB
+                margin-top: -5%
+                .login-checkTitle
+                    font-size: 14px
+                    color: #686868
+                .login-check
+                    display: flex 
+                    width: 60%
+                    margin-left: 10%
+                    margin-bottom: 10px
+                    .login-c
+                        margin-right: 10px
+                    span
+                        font-size: 10px
+                        color: #686868
+            .login-claimtext
+                color: #686868
+                font-size: 12px
+                margin-bottom: 0
+                margin-top: 20px
+    .login-formFooter
+        width: 100%
+        display: flex
+        justify-content: center
+        .login-footer
+            width: 50%
+            display: flex
+            padding: 10px
+            justify-content: space-between
+            align-items: center
+            .login-loginBtn
+                width: 30%
+                height: 50px
+                background:  linear-gradient(to top,#cb5f95,#ff6bb5)
+                display: flex
+                justify-content: center
+                align-items: center
+                color: #fff
+                cursor: pointer
+            .login-resetBtn
+                width: 35px
+                height: 20px
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 10px
+                border: 1px solid #ccc
+                color: #4f4f4f
+                background-color: #eee
+                cursor: pointer
+            .login-footertext
+                font-size: 12px
+                color: #686868
+                

@@ -1,0 +1,121 @@
+.playNowSection{
+    width: 100%;
+    background-color: rgb(255, 145, 145);
+    margin-top: 5%;
+}
+.playNow{
+    display: flex;
+    padding:50px 150px;
+}
+.videoInfo{
+   margin-left: 50px;
+}
+
+.videoNavtxt{
+  color: rgb(255, 75, 75);
+  text-align: center;
+  vertical-align: center;
+  background-color: #fff;
+  padding: 5px 0;
+}
+.videoNav ul{
+    padding: 0;
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
+}
+.videoNav li{
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgb(247, 247, 247);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+.videoNav i{
+   color: rgb(247, 247, 247);
+}
+.share-facebook:hover{
+    background-color: #38528D;
+    border-color: #38528D;
+    cursor: pointer;
+}
+.share-twitter:hover{
+    background-color: #049DDA;
+    border-color: #049DDA;
+    cursor: pointer;
+}
+.share-google:hover{
+    background-color: #CA4739;
+    border-color: #CA4739;
+    cursor: pointer;
+}
+.share-tumblr:hover{
+    background-color: #344258;
+    border-color: #344258;
+    cursor: pointer;
+}
+.share-pinterest:hover{
+    background-color: #BB2029;
+    border-color: #BB2029;
+    cursor: pointer;
+}
+
+.videoListContainer{
+    width: 100%;
+    background-color: #eee;
+    padding-bottom: 50px;
+}
+
+.videoList{
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.videoItem{
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+    width: 24%;
+    height: 180px;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+.videoFilter{
+    display: none;
+}
+
+.videoItem:hover .videoFilter{
+    font-family: 'Dosis';
+    color: azure;
+    background-color: rgba(37, 37, 37, 0.9);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+
+.videoFilter h2{
+    font-size: 20px;
+}
+
+.videoTxtContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
