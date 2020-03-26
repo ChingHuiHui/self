@@ -7,6 +7,10 @@
     display: flex;
     padding:50px 150px;
 }
+iframe{
+    width: 700px;
+    height: 400px;
+}
 .videoInfo{
    margin-left: 50px;
 }
@@ -80,7 +84,7 @@
     background-color: red;
     background-position: center;
     background-size: cover;
-    width: 24%;
+    width: 300px;
     height: 180px;
     margin-bottom: 20px;
     position: relative;
@@ -119,3 +123,34 @@
     flex-direction: column;
     width: 80%;
 }
+
+
+@media screen and (max-width: 600px){
+    .playNowSection{
+        padding: 50px 0; 
+    }
+    .playNow{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 20px
+    }
+        iframe{
+            width: 300px;
+            height: 250px;
+        }
+        .videoInfo{
+            margin-left: 0px;
+            font-size: 0.6rem;
+            width: 80%;
+         }
+         .videoList{
+          flex-direction: column;
+          padding: 0;
+          padding: 20px 0;
+          justify-content: center;
+          align-items: center;
+          
+        }
+        }
