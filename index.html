@@ -491,44 +491,21 @@
 </footer>
 
 <script>
-  $('.newsBox2').on("touchstart", function (e) {
-    "use strict"; //satisfy the code inspectors
-    var link = $(this); //preselect the link
-    if (link.hasClass('hover')) {
-        return true;
-    } else {
-        link.addClass("hover");
-        $('.newsBox2').not(this).removeClass("hover");
+$('.newsBox2').on('touchstart touchend', function(e) {
         e.preventDefault();
-        return false; //extra, and to make sure the function has consistent return points
-    }
-});
+        $(this).toggleClass('hover');
+    });
 
-$('.newsBox').on("touchstart", function (e) {
-    "use strict"; //satisfy the code inspectors
-    var link = $(this); //preselect the link
-    if (link.hasClass('hover')) {
-        return true;
-    } else {
-        link.addClass("hover");
-        $('.newsBox').not(this).removeClass("hover");
+    $('.newsBox').on('touchstart touchend', function(e) {
         e.preventDefault();
-        return false; //extra, and to make sure the function has consistent return points
-    }
-});
+        $(this).toggleClass('hover');
+    });
 
-$('.photoItem').on("touchstart", function (e) {
-    "use strict"; //satisfy the code inspectors
-    var link = $(this); //preselect the link
-    if (link.hasClass('hover')) {
-        return true;
-    } else {
-        link.addClass("hover");
-        $('.photoItem').not(this).removeClass("hover");
+    $('.photoItem').on('touchstart touchend', function(e) {
         e.preventDefault();
-        return false; //extra, and to make sure the function has consistent return points
-    }
-});
+        $(this).toggleClass('hover');
+    });
+
 </script>
 
 <script>

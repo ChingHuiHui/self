@@ -5,6 +5,7 @@ re<!DOCTYPE html>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <meta name="description" content="">
   <meta name="author" content="">
   <title>test</title>
@@ -373,18 +374,10 @@ re<!DOCTYPE html>
       </nav>
       </footer>
 <script>
-  $('.newsBox2').on("touchstart", function (e) {
-    "use strict"; //satisfy the code inspectors
-    var link = $(this); //preselect the link
-    if (link.hasClass('hover')) {
-        return true;
-    } else {
-        link.addClass("hover");
-        $('.newsBox2').not(this).removeClass("hover");
+ $('.newsBox2').on('touchstart touchend', function(e) {
         e.preventDefault();
-        return false; //extra, and to make sure the function has consistent return points
-    }
-});
+        $(this).toggleClass('hover');
+    });
 </script>
 
       <script>
