@@ -82,6 +82,7 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10%;
   }
   .side-menu ul{
    display: flex;
