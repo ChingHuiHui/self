@@ -18,7 +18,7 @@
       .title{
         flex:15;
         font-family: 'Fjalla One';
-        color: #4F4F52;margin: 0;
+        color: #4F4F52
       }
       .newsMore{
         font-family: 'Fjalla One';
@@ -196,6 +196,7 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          cursor: pointer;
       }
       .photosContainer{
           width: 90%;
