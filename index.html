@@ -13,7 +13,8 @@
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/eca7313d19.js" crossorigin="anonymous"></script>
      
-     
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
   <link href="style.css" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
   <link href="login.css" rel="stylesheet">
@@ -489,7 +490,46 @@
 </nav>
 </footer>
 
+<script>
+  $('.newsBox2').on("touchstart", function (e) {
+    "use strict"; //satisfy the code inspectors
+    var link = $(this); //preselect the link
+    if (link.hasClass('hover')) {
+        return true;
+    } else {
+        link.addClass("hover");
+        $('.newsBox2').not(this).removeClass("hover");
+        e.preventDefault();
+        return false; //extra, and to make sure the function has consistent return points
+    }
+});
 
+$('.newsBox').on("touchstart", function (e) {
+    "use strict"; //satisfy the code inspectors
+    var link = $(this); //preselect the link
+    if (link.hasClass('hover')) {
+        return true;
+    } else {
+        link.addClass("hover");
+        $('.newsBox').not(this).removeClass("hover");
+        e.preventDefault();
+        return false; //extra, and to make sure the function has consistent return points
+    }
+});
+
+$('.photoItem').on("touchstart", function (e) {
+    "use strict"; //satisfy the code inspectors
+    var link = $(this); //preselect the link
+    if (link.hasClass('hover')) {
+        return true;
+    } else {
+        link.addClass("hover");
+        $('.photoItem').not(this).removeClass("hover");
+        e.preventDefault();
+        return false; //extra, and to make sure the function has consistent return points
+    }
+});
+</script>
 
 <script>
   function openNav() {

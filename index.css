@@ -45,7 +45,7 @@
         color: #fff;
         padding: 5px 10px;
       }
-      .newsBox:hover .filter{
+      .newsBox:hover .filter,.newsBox.hover .filter{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -98,7 +98,7 @@
       .newsBox2:hover{
         background-color: #fff;
       } 
-      .newsBox2:hover .filter{
+      .newsBox2:hover .filter,.newsBox2.hover .filter{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -312,10 +312,10 @@
       .filter1{
         display: none;
       }
-      .photoItem:hover .photo{
+      .photoItem:hover .photo,.photoItem.hover .photo{
         transform: scale(1.1);
       }
-      .photo:hover .filter1{
+      .photo:hover .filter1,.photoItem.hover .filter1{
      
         display: flex;
         flex-direction: column;
