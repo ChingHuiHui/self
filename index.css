@@ -6,6 +6,9 @@
           margin:0;
           padding: 100px 0;
       }
+      .sectionMargin{
+        margin:  0 120px
+      }
       .newsTitleContainer{
           display: flex;
           border-bottom: 1px solid #EDEDEF;
@@ -18,7 +21,6 @@
         color: #4F4F52;margin: 0;
       }
       .newsMore{
-        flex:1;
         font-family: 'Fjalla One';
         color: #6D6D6D;
         font-size: 12px;
@@ -55,7 +57,7 @@
 
       .top{
           background-image: url(https://images.radio.com/wlnkfm/styles/delta__775x515/s3/lover%20taylor%20swift.png);
-          background-size: contain;
+          background-size: cover;
           background-repeat: no-repeat;
           height: 250px;
           position: relative;
@@ -109,7 +111,7 @@
     
       .newsBox2 .top{
         background-image: url(https://images.radio.com/wlnkfm/styles/delta__775x515/s3/lover%20taylor%20swift.png);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         height: 180px;
         position: relative;
@@ -226,7 +228,7 @@
         transition: 0.5s;
       }
       .photo3{
-        background: url(https://instagram.ftpe4-2.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.854.3072.3072a/s640x640/82007935_1061317497578223_6284456336601901522_n.jpg?_nc_ht=instagram.ftpe4-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=RiKf4pOlSecAX_uHXC5&oh=3054325a95d3b6cafe69022a83ea1061&oe=5E3EA432
+        background: url(https://instagram.ftpe3-2.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/82007935_1061317497578223_6284456336601901522_n.jpg?_nc_ht=instagram.ftpe3-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=qB_xy8NEuYIAX9QOxa-&oh=7f63efb761c9e7417c32b9824a35bdc4&oe=5E7EAE96
 );
         width: 100%;
         height: 100%;
@@ -243,7 +245,7 @@
         transition: 0.5s;
       }
       .photo5{
-        background: url(https://instagram.ftpe4-2.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.345.1242.1242a/s640x640/76880674_1022767338060397_859030886232166919_n.jpg?_nc_ht=instagram.ftpe4-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=qZAqx6KV3PEAX9z6kEE&oh=386b63ff2665a4885f22bc7d814c8a91&oe=5E3F3F23);
+        background: url(https://instagram.ftpe3-2.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/76880674_1022767338060397_859030886232166919_n.jpg?_nc_ht=instagram.ftpe3-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=rKdd-0Zq5zwAX8UN5uA&oh=470e93081975ca5dedaf9d1d517a0e6d&oe=5E7E62D7);
         width: 100%;
         height: 100%;
         background-size: cover; 
@@ -267,7 +269,7 @@
         transition: 0.5s;
       }
       .photo8{
-        background: url(https://instagram.ftpe4-2.fna.fbcdn.net/v/t51.2885-15/e35/c0.210.540.540a/76964133_1090376344641729_3290958182741906453_n.jpg?_nc_ht=instagram.ftpe4-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=AJkOxxrj-PUAX86DY_R&oh=edd699290c144c8b62e8b2505bb90e66&oe=5E3F3210);
+        background: url(https://instagram.ftpe3-2.fna.fbcdn.net/v/t51.2885-15/e35/76964133_1090376344641729_3290958182741906453_n.jpg?_nc_ht=instagram.ftpe3-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=mOjBiFBaNoUAX9YWPGE&oh=771145aa3cc76d83dafc471787ec4718&oe=5E7E8BE6);
         width: 100%;
         height: 100%;
         background-size: cover; 
@@ -353,3 +355,26 @@
          padding: 10px
        }
      }
+
+     @media screen and (max-width: 600px){
+       .sectionMargin{
+         margin: 0 30px;
+       }
+       .newsBox{
+        background-color: #fff;
+      }
+      .newsBox2{
+        background-color: #fff;
+        margin: 20px;
+      }
+      .top{
+        height: 200px
+      }
+      .formContainer{
+       width: 80%;
+      }
+      .formContainer p{
+        background-color: #ffc9c9;
+        padding: 10px
+      }
+    }
