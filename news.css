@@ -82,10 +82,10 @@
   background-color: #F5F5F7;
   margin-bottom: 20px;
 }
-.newsBox2:hover{
+.newsBox2:hover .filter{
   background-color: #fff;
 } 
-.newsBox2:hover .filter{
+.newsBox2:hover .filter,.newsBox2.hover .filter{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,3 +133,4 @@
  .top{
    height: 200px
  }
+}

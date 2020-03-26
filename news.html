@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+re<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,6 +15,8 @@
   <link href="style.css" rel="stylesheet">
   <link href="news.css" rel="stylesheet">
   <link href="login.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -370,7 +372,20 @@
       </ul>
       </nav>
       </footer>
-
+<script>
+  $('.newsBox2').on("touchstart", function (e) {
+    "use strict"; //satisfy the code inspectors
+    var link = $(this); //preselect the link
+    if (link.hasClass('hover')) {
+        return true;
+    } else {
+        link.addClass("hover");
+        $('.newsBox2').not(this).removeClass("hover");
+        e.preventDefault();
+        return false; //extra, and to make sure the function has consistent return points
+    }
+});
+</script>
 
       <script>
         function openNav() {
