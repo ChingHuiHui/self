@@ -31,7 +31,7 @@
 }
 
 .login-container {
-  min-width: 600px;
+  width: 600px;
   background-color: #fff;
   border: 20px solid #000;
   display: -webkit-box;
@@ -82,16 +82,6 @@
   width: 95%;
   padding: 30px;
   position: relative;
-}
-
-.login-container .login-content:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 15px;
-  background-color: #eee;
-  width: 95%;
-  height: 2px;
 }
 
 .login-container .login-wayToLogin {
@@ -226,9 +216,9 @@
   color: red;
 }
 
-.login-container .login-content .login-inputContainer .login-inputItem .login-password {
+.login-container .login-content .login-inputContainer .login-inputItem .login-password, .login-container .login-content .login-inputContainer .login-inputItem .login-text {
   width: 100%;
-  height: 10px;
+  height: 20px;
   border: 1px solid #eee;
   -webkit-box-shadow: inset 1px 1px 1px rgba(51, 51, 102, 0.2);
           box-shadow: inset 1px 1px 1px rgba(51, 51, 102, 0.2);
@@ -295,8 +285,9 @@
 }
 
 .login-container .login-formFooter .login-footer .login-loginBtn {
-  width: 30%;
-  height: 50px;
+  width: 40px;
+  height: 30px;
+  padding: 10px;
   background: -webkit-gradient(linear, left bottom, left top, from(#cb5f95), to(#ff6bb5));
   background: linear-gradient(to top, #cb5f95, #ff6bb5);
   display: -webkit-box;
@@ -334,5 +325,32 @@
 .login-container .login-formFooter .login-footer .login-footertext {
   font-size: 12px;
   color: #686868;
+}
+
+@media screen and (max-width: 600px) {
+  .login-container {
+    width: 300px;
+    height: 450px;
+  }
+  .login-container .login-content {
+    padding: 10px;
+  }
+  .login-container .login-content .login-wayToLogin .login-box {
+    width: 50px;
+  }
+  .login-container .login-content .login-wayToLogin .login-box .login-logotext {
+    display: none;
+  }
+  .login-container .login-content .login-checkContainer .login-check {
+    width: 70%;
+  }
+  .login-container .login-formFooter .login-footer {
+    width: 80%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 /*# sourceMappingURL=login.css.map */

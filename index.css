@@ -146,7 +146,7 @@
       width: 30%;
       }
 
-      input
+      .seletterInput
         {
              display:block;
             background: transparent;
@@ -155,7 +155,7 @@
             width: 100%;
             border: 1px solid rgb(226, 174, 174);
         }
-      input::-webkit-input-placeholder 
+      .seletterInput::-webkit-input-placeholder 
         { /* Chrome/Opera/Safari */
         color: rgb(219, 60, 86);
         font-weight: bold;
