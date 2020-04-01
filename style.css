@@ -44,7 +44,7 @@ html,body{
     }
     .fa-shopping-cart{
       position: absolute;
-      right: 10%;
+      right: 15%;
       color: #f767bb;
       cursor: pointer;
     }
