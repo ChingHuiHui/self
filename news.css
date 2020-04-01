@@ -21,7 +21,7 @@
 }
 .newsList{
   display: flex;
-  justify-content:space-around;
+  justify-content:center;
   flex-wrap: wrap;
   margin-top:50px;
 }
@@ -76,11 +76,12 @@
   color:rgb(158, 157, 157);
 }
 .newsBox2{
-  width:300px;
+  width:280px;
   border-radius:3px;
   overflow: hidden;
   background-color: #F5F5F7;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .newsBox2:hover .filter{
   background-color: #fff;
