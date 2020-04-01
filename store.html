@@ -83,7 +83,7 @@
         </ul>
       </nav>
       </div>
-      
+      <a href='cart.html' class="fas fa-shopping-cart"></a>
       <nav class="login-menu">
         <ul style="list-style: none;padding: 0;">
           <li><a href="#"><i style="margin-right: 5px;" class="fas fa-sign-in-alt"></i>LOGIN</a></li>
@@ -175,8 +175,9 @@
       
 
 <div class="storeSection">
+
     <div class="storeContainer">
-        
+      
         <div class="stroeSide">
             <ul class="sideNav">
                 <li>ALL</li>
@@ -271,6 +272,34 @@
 
     </div>
 
+<div class="itemModal">
+  <div class="modalHeader">
+    <div class="close"><i class="fas fa-times"></i></div>
+  </div>
+  <div class="modalContainer">
+    <div class="itemImg"></div>
+    <div class="modalContent">
+        <h1>MISS AMERICANA FILM DARK GREY HOODIE</h1>   
+        <h3>PRICE $75</h3>
+        <div class="modalSize">
+          <h3>SIZE</h3>
+          <ul>
+            <li>S</li>
+            <li>M</li>
+            <li>L</li>
+            <li>XL</li>
+            <li>2X</li>
+          </ul>
+        </div>
+        <div class="number">
+          <div id='minus'><i class="fas fa-minus"></i></div>
+          <p class="num">0</p>
+          <div id='plus'><i class="fas fa-plus"></i></div>
+        </div>
+        <div class='modalBtn'>ADD TO CART</div>
+      </div>
+  </div>
+</div>
 
 
     <footer >
@@ -293,6 +322,38 @@
     </ul>
     </nav>
     </footer>
+<script>
+  document.querySelector('.storeItem').addEventListener('click',function(){
+    document.querySelector('.itemModal').style.display='block'
+  })
+
+  document.querySelector('.close').addEventListener('click',function(){
+    document.querySelector('.itemModal').style.display='none'
+  })
+
+ 
+  document.querySelector('#plus').addEventListener('click',function(){
+    var count = document.querySelector('.num').textContent
+    var plus = count/1+1+''
+    document.querySelector('.num').textContent = plus;
+  })
+
+  document.querySelector('#minus').addEventListener('click',function(){
+    var count = document.querySelector('.num').textContent
+    var plus = count/1-1
+    if(plus<0){
+      plus = '0'
+      document.querySelector('.num').textContent = plus;
+    }else{
+      plus=plus+''
+      document.querySelector('.num').textContent = plus;
+    }
+   
+  })
+  
+  
+</script>
+
 
     <script>
         function openNav() {
